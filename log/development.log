@@ -1,0 +1,328 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (15.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to Event (20100326154010)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "venue_id" integer, "introduction" text, "text" text, "tickets_released" boolean, "availability_start" date, "availability_end" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "venues" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "venue_id" integer, "seated_capacity" integer, "overflow_capacity" integer, "name" varchar(255), "address" varchar(255), "google_maps_location" varchar(255), "text" text) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "event_id" integer, "ticket_name" varchar(255), "price_pounds" integer, "quantity_available" integer, "released" boolean, "availability_start" date, "availability_end" date) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100326154010')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tickets")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("venues")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-26 16:00:34) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-26 16:00:55) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:01:09) [GET]
+Rendering events/index
+Completed in 158ms (View: 156, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:01:19) [GET]
+Rendering events/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:03:49) [GET]
+Rendering events/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/events/index.html.erb:
+2: <p>Welcome to conferencr. Select your event</p>
+3: 
+4: <ol>
+5:   <%-@events.each do |event|-%>
+6:   <li>
+7:     <h2><%= link_to event.name, event %> <span class="location"><span class="atsign">@</span><%= event.venue_name%></span></h2>
+8:     <p><%= event.introduction%></p>
+
+    app/views/events/index.html.erb:5
+
+Rendered rescues/_trace (52.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:04:01) [GET]
+
+NameError (uninitialized constant EventsController::Event):
+  app/controllers/events_controller.rb:4:in `index'
+
+Rendered rescues/_trace (129.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:04:21) [GET]
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:08:52) [GET]
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:09:12) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:11:10) [GET]
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:11:16) [GET]
+Rendering events/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/events/new.html.erb:
+1: <% form_for @event do |f| -%>
+2: <%= f.label :name %>
+3: <%= f.label :venue_id %>
+4: <%= f.label :introduction %>
+
+    app/views/events/new.html.erb:1
+
+Rendered rescues/_trace (52.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:11:33) [GET]
+Rendering events/new
+Completed in 91ms (View: 84, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:13:35) [GET]
+Rendering events/new
+
+ActionView::TemplateError (undefined method `text' for #<ActionView::Helpers::FormBuilder:0x264ae18>) on line #3 of app/views/events/new.html.erb:
+1: <% form_for @event do |f| -%>
+2: <%= f.label :name %>
+3: <%= f.text :name %>
+4: <%= f.label :venue_id %>
+5: <%= f.text :venue_id %>
+6: <%= f.label :introduction %>
+
+    app/views/events/new.html.erb:3
+    app/views/events/new.html.erb:1
+
+Rendered rescues/_trace (52.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:14:06) [GET]
+Rendering events/new
+
+ActionView::TemplateError (undefined method `datetime' for #<ActionView::Helpers::FormBuilder:0x24adf88>) on line #13 of app/views/events/new.html.erb:
+10: <%= f.label :tickets_released %>
+11: <%= f.text_field :tickets_released %>
+12: <%= f.label :availability_start %>
+13: <%= f.datetime :availability_start %>
+14: <%= f.label :availability_end %>
+15: <%= f.datetime :availability_end %>
+16: <%= f.submit "save" %>
+
+    app/views/events/new.html.erb:13
+    app/views/events/new.html.erb:1
+
+Rendered rescues/_trace (139.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:14:27) [GET]
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:14:56) [GET]
+Rendering events/new
+Completed in 244ms (View: 238, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:15:19) [GET]
+Rendering events/new
+Completed in 39ms (View: 33, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:16:42) [GET]
+Rendering events/new
+Completed in 41ms (View: 34, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:16:55) [GET]
+Rendering events/new
+Completed in 129ms (View: 122, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-26 16:25:45) [GET]
+Rendering events/new
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-03-26 16:26:15) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"mw8eKcbcfJJRj2zzCif0gqo0Zsa5Dquhi/H6/v3XbEU=", "event"=>{"availability_start(3i)"=>"26", "name"=>"Build 2010", "availability_start(4i)"=>"16", "availability_start(5i)"=>"25", "tickets_released"=>"FALSE", "availability_end(1i)"=>"2010", "text"=>"This is the long text", "venue_id"=>"0", "availability_end(2i)"=>"11", "availability_end(3i)"=>"26", "availability_end(4i)"=>"16", "availability_end(5i)"=>"25", "introduction"=>"Hello", "availability_start(1i)"=>"2010", "availability_start(2i)"=>"4"}}
+
+ActionView::MissingTemplate (Missing template events/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-03-26 16:26:29) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"mw8eKcbcfJJRj2zzCif0gqo0Zsa5Dquhi/H6/v3XbEU=", "event"=>{"availability_start(3i)"=>"26", "name"=>"Build 2010", "availability_start(4i)"=>"16", "availability_start(5i)"=>"25", "tickets_released"=>"FALSE", "availability_end(1i)"=>"2010", "text"=>"This is the long text", "venue_id"=>"0", "availability_end(2i)"=>"11", "availability_end(3i)"=>"26", "availability_end(4i)"=>"16", "availability_end(5i)"=>"25", "introduction"=>"Hello", "availability_start(1i)"=>"2010", "availability_start(2i)"=>"4"}}
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/events_controller.rb:14:in `create'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-03-26 16:26:56) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"mw8eKcbcfJJRj2zzCif0gqo0Zsa5Dquhi/H6/v3XbEU=", "event"=>{"availability_start(3i)"=>"26", "name"=>"Build 2010", "availability_start(4i)"=>"16", "availability_start(5i)"=>"25", "tickets_released"=>"FALSE", "availability_end(1i)"=>"2010", "text"=>"This is the long text", "venue_id"=>"0", "availability_end(2i)"=>"11", "availability_end(3i)"=>"26", "availability_end(4i)"=>"16", "availability_end(5i)"=>"25", "introduction"=>"Hello", "availability_start(1i)"=>"2010", "availability_start(2i)"=>"4"}}
+  [4;35;1mEvent Create (0.6ms)[0m   [0mINSERT INTO "events" ("name", "created_at", "tickets_released", "availability_end", "updated_at", "venue_id", "text", "introduction", "availability_start") VALUES('Build 2010', '2010-03-26 16:26:56', 'f', '2010-11-26', '2010-03-26 16:26:56', 0, 'This is the long text', 'Hello', '2010-04-26')[0m
+Redirected to http://0.0.0.0:3000/events/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/events]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-26 16:26:56) [GET]
+  Parameters: {"id"=>"1"}
+Rendering events/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-26 16:35:15) [GET]
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering events/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-26 16:35:23) [GET]
+  Parameters: {"id"=>"1"}
+Rendering events/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-26 16:36:09) [GET]
+  Parameters: {"id"=>"1"}
+Rendering events/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #2 of app/views/events/show.html.erb:
+1: <h1>Conferenc<span>r</span></h1>
+2: <h2><%= @event.name%>
+3: 
+4: <p><%= @event.introduction %></p>
+5: 
+
+    app/views/events/show.html.erb:2
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-26 16:36:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering events/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-26 16:37:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering events/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/events/1]

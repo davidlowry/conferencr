@@ -8,7 +8,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   config.gem 'activemerchant', :lib => 'active_merchant'
-  config.gem 'rubyist-aasm'
+  config.gem 'aasm'
   
   config.time_zone = 'UTC'
 end

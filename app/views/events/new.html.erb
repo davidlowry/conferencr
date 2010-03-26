@@ -1,0 +1,36 @@
+<h1>New Event</h1>
+
+<% form_for @event do |f| -%>
+<ul>
+  <li>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </li>
+  <li>
+    <%= f.label :venue_id %>
+    <%= f.text_field :venue_id %>
+  </li>
+  <li>
+    <%= f.label :introduction %>
+    <%= f.text_area :introduction %>
+  </li>
+  <li>
+    <%= f.label :text %>
+    <%= f.text_area :text %>
+  </li>
+  <li>
+    <%= f.label :tickets_released %>
+    <%= f.text_field :tickets_released %>
+  </li>
+  <li>
+    <%= f.label :availability_start %>
+    <%= f.datetime_select :availability_start %>
+  </li>
+  <li>
+    <%= f.label :availability_end %>
+    <%= f.datetime_select :availability_end %>
+  </li>
+
+  <li><%= f.submit "save" %></li>
+  
+<% end -%>

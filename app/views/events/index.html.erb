@@ -1,0 +1,12 @@
+<h1>Conferenc<span>r</span></h1>
+<p>Welcome to conferencr. Select your event</p>
+
+<ol>
+  <%-@events.each do |event|-%>
+  <li>
+    <h2><%= link_to event.name, event %> <span class="location"><span class="atsign">@</span><%= event.venue_name%></span></h2>
+    <p><%= event.introduction%></p>
+    <span class="more-link"><%= link_to "more", event %></span>
+  </li>
+  <%-end-%>
+</ol>
