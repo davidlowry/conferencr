@@ -1,7 +1,13 @@
 class TicketsController < ApplicationController
   
   def index;
-    @tickets = Ticket.all
+    @event = Event.find_by_id(params[:event_id])
+    if @event
+      @tickets = @event.tickets
+    else
+      @tickets = Ticket.all
+    end
+
   end
   
   def show
@@ -16,7 +22,7 @@ class TicketsController < ApplicationController
   def create
     @ticket = Ticket.new(params[:ticket])
     if @ticket.save
-      redirect_to @ticket
+      redirect_to [@ticket.event, @ticket]
     else
       render :new
     end

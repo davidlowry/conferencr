@@ -1,1 +1,11 @@
-These are tickets for the event called <%= @event.name %>
+<% content_for :body do %>
+  <% if !@event.nil? %> These are tickets for the event called <%= @event.name %> <% end %>
+  
+  <ol>
+  <% @tickets.each do |t| %>
+    <li><%= link_to t.ticket_name, t %></li>
+  <% end %>
+  </ol>
+  
+<% end %>
+
