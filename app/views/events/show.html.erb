@@ -1,12 +1,27 @@
-<h1>Conferenc<span>r</span></h1>
-<h2><%= @event.name%></h2>
+<% content_for :header do %>
+  <h1>Conferenc<span>r</span></h1>
+<% end %>
 
-<p><%= @event.introduction %></p>
+<% content_for :body do %>
+  <h2><%= @event.name%></h2>
 
-<p><%= @event.text %></p>
+  <p><%= @event.introduction %></p>
 
-<h3>Ticket Availability</h3>
-<p><em>Ticket Availability</em></p>
+  <p><%= @event.text %></p>
+<% end %>
 
-<h3>Venue</h3>
-<p><em>Venue</em></p>
+<% content_for :column do %>
+  <h3>Ticket Availability</h3>
+  <p><em>Ticket Availability</em></p>
+  <ul>
+  <% @tickets.each do |ticket| %>
+    <li><%= link_to ticket.name, [@event, ticket] %></li>
+  <% end %>
+  <%= link_to "new ticket", new_event_ticket_path(:event_id=>@event.id)%>
+  </ul>
+
+  <h3>Venue</h3>
+  <p><em><%= @event.venue_blurb%></em></p>
+  <%= link_to "edit venue", edit_venue_path(:event_id=>@event.id)%>
+  
+<% end %>

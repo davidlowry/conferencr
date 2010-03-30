@@ -326,3 +326,1759 @@ Processing EventsController#show (for 127.0.0.1 at 2010-03-26 16:37:19) [GET]
   [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
 Rendering events/show
 Completed in 15ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:15:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 144ms (View: 136, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:16:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:16:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:17:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:18:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+ERROR: compiling _run_erb_app47views47events47show46html46erb RAISED compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:11: syntax error, unexpected kEND, expecting $end
+;  end ; @output_buffer.concat "\n\n"
+      ^
+Function body:           def _run_erb_app47views47events47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :header ; @output_buffer.concat "\n  <h1>Conferenc<span>r</span></h1>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :body ; @output_buffer.concat "\n  <h2>"
+; @output_buffer.concat(( @event.name).to_s); @output_buffer.concat "</h2>\n\n  <p>"
+
+; @output_buffer.concat(( @event.introduction ).to_s); @output_buffer.concat "</p>\n\n  <p>"
+
+; @output_buffer.concat(( @event.text ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :column ; @output_buffer.concat "\n  <h3>Ticket Availability</h3>\n  <p><em>Ticket Availability</em></p>\n\n  <h3>Venue</h3>\n  <p><em>Venue</em></p>\n"
+
+
+
+
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/dave/web/conferencr/app/views/events/show.html.erb:11:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:11: syntax error, unexpected kEND, expecting $end
+;  end ; @output_buffer.concat "\n\n"
+      ^) on line #11 of app/views/events/show.html.erb:
+8:   <p><%= @event.introduction %></p>
+9: 
+10:   <p><%= @event.text %></p>
+11: <% end %>
+12: 
+13: <% content_for :column %>
+14:   <h3>Ticket Availability</h3>
+
+    app/views/events/show.html.erb:11:in `compile!'
+
+Rendered rescues/_trace (53.8ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:18:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:20:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 101ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:22:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:22:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:22:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:23:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:23:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:23:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:23:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:23:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:23:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:23:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-27 13:24:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 13:40:56) [GET]
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 82ms (View: 75, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 13:43:04) [GET]
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 15:57:33) [GET]
+  [4;36;1mEvent Load (1.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 42ms (View: 24, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 15:57:34) [GET]
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 16:59:58) [GET]
+  [4;36;1mEvent Load (36.4ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 163ms (View: 51, DB: 36) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 16:59:59) [GET]
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 19:08:37) [GET]
+  [4;36;1mEvent Load (1.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-27 19:08:38) [GET]
+  [4;35;1mEvent Load (1.9ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 169ms (View: 6, DB: 2) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 16:41:41) [GET]
+  [4;36;1mEvent Load (1.4ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 172ms (View: 154, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 16:42:32) [GET]
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:43:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 33ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:50:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 87ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:53:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+ERROR: compiling _run_erb_app47views47events47show46html46erb RAISED compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:16: syntax error, unexpected ')'
+...(( @tickets.each do |ticket| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:22: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer
+      ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:25: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47events47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :header do ; @output_buffer.concat "\n  <h1>Conferenc<span>r</span></h1>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :body do ; @output_buffer.concat "\n  <h2>"
+; @output_buffer.concat(( @event.name).to_s); @output_buffer.concat "</h2>\n\n  <p>"
+
+; @output_buffer.concat(( @event.introduction ).to_s); @output_buffer.concat "</p>\n\n  <p>"
+
+; @output_buffer.concat(( @event.text ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :column do ; @output_buffer.concat "\n  <h3>Ticket Availability</h3>\n  <p><em>Ticket Availability</em></p>\n  "
+
+
+; @output_buffer.concat(( @tickets.each do |ticket| ).to_s); @output_buffer.concat "\n    <li>"
+; @output_buffer.concat(( link_to ticket.name, ticket ).to_s); @output_buffer.concat "</li>\n  "
+;  end ; @output_buffer.concat "\n\n  <h3>Venue</h3>\n  <p><em>Venue</em></p>\n"
+
+
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/dave/web/conferencr/app/views/events/show.html.erb:25:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:16: syntax error, unexpected ')'
+...(( @tickets.each do |ticket| ).to_s); @output_buffer.concat ...
+                              ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:22: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer
+      ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:25: syntax error, unexpected kEND, expecting ')') on line #16 of app/views/events/show.html.erb:
+13: <% content_for :column do %>
+14:   <h3>Ticket Availability</h3>
+15:   <p><em>Ticket Availability</em></p>
+16:   <%= @tickets.each do |ticket| %>
+17:     <li><%= link_to ticket.name, ticket %></li>
+18:   <% end %>
+19: 
+
+    app/views/events/show.html.erb:25:in `compile!'
+
+Rendered rescues/_trace (53.9ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:54:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+ERROR: compiling _run_erb_app47views47events47show46html46erb RAISED compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:16: syntax error, unexpected kDO
+...( @tickets.each do |ticket| do ).to_s); @output_buffer.conca...
+                              ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:22: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer
+      ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:25: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47events47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :header do ; @output_buffer.concat "\n  <h1>Conferenc<span>r</span></h1>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :body do ; @output_buffer.concat "\n  <h2>"
+; @output_buffer.concat(( @event.name).to_s); @output_buffer.concat "</h2>\n\n  <p>"
+
+; @output_buffer.concat(( @event.introduction ).to_s); @output_buffer.concat "</p>\n\n  <p>"
+
+; @output_buffer.concat(( @event.text ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :column do ; @output_buffer.concat "\n  <h3>Ticket Availability</h3>\n  <p><em>Ticket Availability</em></p>\n  "
+
+
+; @output_buffer.concat(( @tickets.each do |ticket| do ).to_s); @output_buffer.concat "\n    <li>"
+; @output_buffer.concat(( link_to ticket.name, ticket ).to_s); @output_buffer.concat "</li>\n  "
+;  end ; @output_buffer.concat "\n\n  <h3>Venue</h3>\n  <p><em>Venue</em></p>\n"
+
+
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/dave/web/conferencr/app/views/events/show.html.erb:25:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:16: syntax error, unexpected kDO
+...( @tickets.each do |ticket| do ).to_s); @output_buffer.conca...
+                              ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:22: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer
+      ^
+/Users/dave/web/conferencr/app/views/events/show.html.erb:25: syntax error, unexpected kEND, expecting ')') on line #16 of app/views/events/show.html.erb:
+13: <% content_for :column do %>
+14:   <h3>Ticket Availability</h3>
+15:   <p><em>Ticket Availability</em></p>
+16:   <%= @tickets.each do |ticket| do %>
+17:     <li><%= link_to ticket.name, ticket %></li>
+18:   <% end %>
+19: 
+
+    app/views/events/show.html.erb:25:in `compile!'
+
+Rendered rescues/_trace (51.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:54:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+ERROR: compiling _run_erb_app47views47events47show46html46erb RAISED compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:16: syntax error, unexpected kDO
+;  @tickets.each do |ticket| do ; @output_buffer.concat "\n    <li>"
+                               ^
+Function body:           def _run_erb_app47views47events47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :header do ; @output_buffer.concat "\n  <h1>Conferenc<span>r</span></h1>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :body do ; @output_buffer.concat "\n  <h2>"
+; @output_buffer.concat(( @event.name).to_s); @output_buffer.concat "</h2>\n\n  <p>"
+
+; @output_buffer.concat(( @event.introduction ).to_s); @output_buffer.concat "</p>\n\n  <p>"
+
+; @output_buffer.concat(( @event.text ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :column do ; @output_buffer.concat "\n  <h3>Ticket Availability</h3>\n  <p><em>Ticket Availability</em></p>\n  "
+
+
+;  @tickets.each do |ticket| do ; @output_buffer.concat "\n    <li>"
+; @output_buffer.concat(( link_to ticket.name, ticket ).to_s); @output_buffer.concat "</li>\n  "
+;  end ; @output_buffer.concat "\n\n  <h3>Venue</h3>\n  <p><em>Venue</em></p>\n"
+
+
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/dave/web/conferencr/app/views/events/show.html.erb:25:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/dave/web/conferencr/app/views/events/show.html.erb:16: syntax error, unexpected kDO
+;  @tickets.each do |ticket| do ; @output_buffer.concat "\n    <li>"
+                               ^) on line #16 of app/views/events/show.html.erb:
+13: <% content_for :column do %>
+14:   <h3>Ticket Availability</h3>
+15:   <p><em>Ticket Availability</em></p>
+16:   <% @tickets.each do |ticket| do %>
+17:     <li><%= link_to ticket.name, ticket %></li>
+18:   <% end %>
+19: 
+
+    app/views/events/show.html.erb:25:in `compile!'
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:54:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (45.8ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+Completed in 156ms (View: 10, DB: 46) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:54:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:55:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+
+ActionView::TemplateError (undefined method `venue_blurb' for #<Event:0x2518b6c>) on line #23 of app/views/events/show.html.erb:
+20:   </ul>
+21: 
+22:   <h3>Venue</h3>
+23:   <p><em><%= @event.venue_blurb%></em></p>
+24: <% end %>
+
+    app/views/events/show.html.erb:23
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (58.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:55:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+Completed in 98ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:55:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:56:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+
+ActionView::TemplateError (undefined method `new_ticket_path' for #<ActionView::Base:0x25bf4e4>) on line #20 of app/views/events/show.html.erb:
+17:   <% @tickets.each do |ticket| %>
+18:     <li><%= link_to ticket.name, [@event, ticket] %></li>
+19:   <% end %>
+20:   <%= link_to new_ticket_path(:event=>@event)%>
+21:   </ul>
+22: 
+23:   <h3>Venue</h3>
+
+    app/views/events/show.html.erb:20
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (55.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:56:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `new_ticket_path' for #<ActionView::Base:0x23cf364>) on line #20 of app/views/events/show.html.erb:
+17:   <% @tickets.each do |ticket| %>
+18:     <li><%= link_to ticket.name, [@event, ticket] %></li>
+19:   <% end %>
+20:   <%= link_to new_ticket_path%>
+21:   </ul>
+22: 
+23:   <h3>Venue</h3>
+
+    app/views/events/show.html.erb:20
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (60.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:56:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+
+ActionView::TemplateError (undefined method `new_ticket_path' for #<ActionView::Base:0x24f1224>) on line #20 of app/views/events/show.html.erb:
+17:   <% @tickets.each do |ticket| %>
+18:     <li><%= link_to ticket.name, [@event, ticket] %></li>
+19:   <% end %>
+20:   <%= link_to new_ticket_path(:event=>@event)%>
+21:   </ul>
+22: 
+23:   <h3>Venue</h3>
+
+    app/views/events/show.html.erb:20
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:56:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+
+ActionView::TemplateError (new_event_ticket_url failed to generate from {:action=>"new", :controller=>"tickets", :event=>#<Event id: 1, name: "Build 2010", venue_id: 0, introduction: "Hello", text: "This is the long text", tickets_released: false, availability_start: "2010-04-26", availability_end: "2010-11-26", created_at: "2010-03-26 16:26:56", updated_at: "2010-03-26 16:26:56">}, expected: {:action=>"new", :controller=>"tickets"}, diff: {:event=>#<Event id: 1, name: "Build 2010", venue_id: 0, introduction: "Hello", text: "This is the long text", tickets_released: false, availability_start: "2010-04-26", availability_end: "2010-11-26", created_at: "2010-03-26 16:26:56", updated_at: "2010-03-26 16:26:56">}) on line #20 of app/views/events/show.html.erb:
+17:   <% @tickets.each do |ticket| %>
+18:     <li><%= link_to ticket.name, [@event, ticket] %></li>
+19:   <% end %>
+20:   <%= link_to new_event_ticket_path(:event=>@event)%>
+21:   </ul>
+22: 
+23:   <h3>Venue</h3>
+
+    (eval):20:in `new_event_ticket_path'
+    app/views/events/show.html.erb:20
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (60.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:56:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.7ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+Completed in 23ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:57:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+Completed in 23ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:57:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+
+ActionView::TemplateError (undefined method `edit_event_venue_path' for #<ActionView::Base:0x23942b4>) on line #25 of app/views/events/show.html.erb:
+22: 
+23:   <h3>Venue</h3>
+24:   <p><em><%= @event.venue_blurb%></em></p>
+25:   <%= link_to "edit venue", edit_event_venue_path(:event_id=>@event.id)%>
+26:   
+27: <% end %>
+
+    app/views/events/show.html.erb:25
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (57.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:57:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+
+ActionView::TemplateError (undefined method `edit_venue_path' for #<ActionView::Base:0x24a98fc>) on line #25 of app/views/events/show.html.erb:
+22: 
+23:   <h3>Venue</h3>
+24:   <p><em><%= @event.venue_blurb%></em></p>
+25:   <%= link_to "edit venue", edit_venue_path(:event_id=>@event.id)%>
+26:   
+27: <% end %>
+
+    app/views/events/show.html.erb:25
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (144.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 16:57:42) [GET]
+
+ActionController::RoutingError (No route matches "/events/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 16:57:44) [GET]
+
+ActionController::RoutingError (No route matches "/events/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 16:58:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:01:37) [GET]
+  Parameters: {"event_id"=>"1"}
+
+ActionView::MissingTemplate (Missing template tickets/new.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:01:45) [GET]
+  Parameters: {"event_id"=>"1"}
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:05:37) [GET]
+  Parameters: {"event_id"=>"1"}
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 319ms (View: 312, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:06:07) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 95ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:06:30) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 48ms (View: 36, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:06:48) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 56ms (View: 43, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:07:03) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 50ms (View: 37, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:07:18) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 52ms (View: 38, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:07:26) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 53ms (View: 38, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:07:29) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  app/controllers/tickets_controller.rb:13:in `new'
+
+Rendered rescues/_trace (44.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:11:01) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 141ms (View: 128, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:11:47) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 53ms (View: 40, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:12:47) [GET]
+  Parameters: {"event_id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 46ms (View: 33, DB: 0) | 200 OK [http://0.0.0.0/events/1/tickets/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:12:50) [GET]
+Rendering template within layouts/application
+Rendering events/new
+Completed in 42ms (View: 35, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:12:51) [GET]
+Rendering template within layouts/application
+Rendering events/new
+Completed in 36ms (View: 29, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:13:17) [GET]
+Rendering template within layouts/application
+Rendering events/new
+Completed in 135ms (View: 128, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:13:27) [GET]
+Rendering template within layouts/application
+Rendering events/new
+Completed in 43ms (View: 35, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:13:37) [GET]
+Rendering template within layouts/application
+Rendering events/new
+Completed in 42ms (View: 35, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:17:59) [GET]
+Rendering template within layouts/application
+Rendering events/new
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Venue) on line #14 of app/views/events/new.html.erb:
+11:       </li>
+12:       <li>
+13:         <%= f.label :venue_id, "Venue" %>
+14:         <%= f.select :venue_id, Venue.all.collect{|v| [v.name, v.id]} %>
+15:       </li>
+16:       <li>
+17:         <%= f.label :introduction %>
+
+    app/views/events/new.html.erb:14
+    app/views/events/new.html.erb:6
+    app/views/events/new.html.erb:5
+
+Rendered rescues/_trace (148.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:18:22) [GET]
+Rendering template within layouts/application
+Rendering events/new
+
+ActionView::TemplateError (Expected /Users/dave/web/conferencr/app/models/venue.rb to define Venue) on line #14 of app/views/events/new.html.erb:
+11:       </li>
+12:       <li>
+13:         <%= f.label :venue_id, "Venue" %>
+14:         <%= f.select :venue_id, Venue.all.collect{|v| [v.name, v.id]} %>
+15:       </li>
+16:       <li>
+17:         <%= f.label :introduction %>
+
+    app/views/events/new.html.erb:14
+    app/views/events/new.html.erb:6
+    app/views/events/new.html.erb:5
+
+Rendered rescues/_trace (66.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:18:28) [GET]
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mVenue Load (27.6ms)[0m   [0;1mSELECT * FROM "venues" [0m
+Completed in 67ms (View: 33, DB: 28) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:19:07) [GET]
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mVenue Load (0.3ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 130ms (View: 122, DB: 0) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:19:11) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  app/controllers/venues_controller.rb:13:in `new'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:20:31) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  app/controllers/venues_controller.rb:13:in `new'
+
+Rendered rescues/_trace (43.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:20:40) [GET]
+
+ActionView::MissingTemplate (Missing template venues/new.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:24:30) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.3ms)[0m   [0;1mSELECT * FROM "venues" [0m
+
+ActionView::TemplateError (undefined method `availability_end' for #<Venue:0x23102ac>) on line #44 of app/views/venues/new.html.erb:
+41:       </li>
+42:       <li>
+43:         <%= f.label :text %>
+44:         <%= f.text_area :availability_end, :rows=>5 %>
+45:       </li>
+46: 
+47:       <li><%= f.submit "save" %></li>
+
+    app/views/venues/new.html.erb:44
+    app/views/venues/new.html.erb:6
+    app/views/venues/new.html.erb:5
+
+Rendered rescues/_trace (65.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:24:39) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;35;1mVenue Load (0.3ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:24:48) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:26:22) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.3ms)[0m   [0;1mSELECT * FROM "venues" [0m
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:26:33) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;35;1mVenue Load (0.3ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 112ms (View: 105, DB: 0) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#create (for 127.0.0.1 at 2010-03-30 17:27:30) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"VvwvnlcsZulbQlaiSQvAhjBZ32wulc+VfpeGV5zm2xI=", "venue"=>{"address"=>"2 Lanyon Place, Belfast, Ulster BT1 3LT", "name"=>"Belfast Waterfront", "google_maps_location"=>"<iframe width=\"425\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.co.uk/maps?client=safari&amp;q=belfast+waterfront&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=en&amp;hq=waterfront&amp;hnear=Belfast,+UK&amp;ll=54.60245,-5.915623&amp;spn=0.013177,0.030556&amp;z=14&amp;iwloc=A&amp;cid=707049803228688749&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.co.uk/maps?client=safari&amp;q=belfast+waterfront&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=en&amp;hq=waterfront&amp;hnear=Belfast,+UK&amp;ll=54.60245,-5.915623&amp;spn=0.013177,0.030556&amp;z=14&amp;iwloc=A&amp;cid=707049803228688749&amp;source=embed\" style=\"color:#0000FF;text-align:left\">View Larger Map</a></small>", "overflow_capacity"=>"", "seated_capacity"=>"", "text"=>""}}
+  [4;36;1mVenue Create (0.6ms)[0m   [0;1mINSERT INTO "venues" ("name", "address", "seated_capacity", "overflow_capacity", "google_maps_location", "venue_id", "text") VALUES('Belfast Waterfront', '2 Lanyon Place, Belfast, Ulster BT1 3LT', NULL, NULL, '<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps?client=safari&amp;q=belfast+waterfront&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=en&amp;hq=waterfront&amp;hnear=Belfast,+UK&amp;ll=54.60245,-5.915623&amp;spn=0.013177,0.030556&amp;z=14&amp;iwloc=A&amp;cid=707049803228688749&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.uk/maps?client=safari&amp;q=belfast+waterfront&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=en&amp;hq=waterfront&amp;hnear=Belfast,+UK&amp;ll=54.60245,-5.915623&amp;spn=0.013177,0.030556&amp;z=14&amp;iwloc=A&amp;cid=707049803228688749&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>', NULL, '')[0m
+Redirected to http://0.0.0.0:3000/venues/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/venues]
+
+
+Processing VenuesController#show (for 127.0.0.1 at 2010-03-30 17:27:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVenue Load (0.3ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template venues/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:27:35) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.5ms)[0m   [0;1mSELECT * FROM "venues" [0m
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:27:51) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;35;1mVenue Load (0.4ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:28:00) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.4ms)[0m   [0;1mSELECT * FROM "venues" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #17 of app/views/venues/new.html.erb:
+14:         <p class="guidance">If this venue is part of a complex then create the complex as a venue first, then make the &quot;child venues&quot; by using the complex as the Parent Venue.</p>
+15:         
+16:         <%= f.label :venue_id, "Parent Venue" %>
+17:         <%= f.select :venue_id, [].merge(Venue.all.collect{|v| [v.name, v.id]}) %>
+18:       </li>
+19:       <li>
+20:         <%= f.label :seated_capacity %>
+
+    app/views/venues/new.html.erb:17
+    app/views/venues/new.html.erb:7
+    app/views/venues/new.html.erb:6
+
+Rendered rescues/_trace (57.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:28:11) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;35;1mVenue Load (0.5ms)[0m   [0mSELECT * FROM "venues" [0m
+
+ActionView::TemplateError (can't convert Array into Integer) on line #17 of app/views/venues/new.html.erb:
+14:         <p class="guidance">If this venue is part of a complex then create the complex as a venue first, then make the &quot;child venues&quot; by using the complex as the Parent Venue.</p>
+15:         
+16:         <%= f.label :venue_id, "Parent Venue" %>
+17:         <%= f.select :venue_id, (Venue.all.collect{|v| [v.name, v.id]}).pop([]) %>
+18:       </li>
+19:       <li>
+20:         <%= f.label :seated_capacity %>
+
+    app/views/venues/new.html.erb:17:in `pop'
+    app/views/venues/new.html.erb:17
+    app/views/venues/new.html.erb:7
+    app/views/venues/new.html.erb:6
+
+Rendered rescues/_trace (58.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:28:26) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.4ms)[0m   [0;1mSELECT * FROM "venues" [0m
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#create (for 127.0.0.1 at 2010-03-30 17:29:53) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"VvwvnlcsZulbQlaiSQvAhjBZ32wulc+VfpeGV5zm2xI=", "venue"=>{"address"=>"", "name"=>"Belfast Waterfront Studio", "google_maps_location"=>"", "overflow_capacity"=>"100", "seated_capacity"=>"400", "text"=>"The Waterfront Studio is a performance and exhibition space seating 400 people used regularly for music, comedy, exhibition and .....", "venue_id"=>"1"}}
+  [4;35;1mVenue Create (0.5ms)[0m   [0mINSERT INTO "venues" ("name", "address", "seated_capacity", "overflow_capacity", "google_maps_location", "venue_id", "text") VALUES('Belfast Waterfront Studio', '', 400, 100, '', 1, 'The Waterfront Studio is a performance and exhibition space seating 400 people used regularly for music, comedy, exhibition and .....')[0m
+Redirected to http://0.0.0.0:3000/venues/2
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/venues]
+
+
+Processing VenuesController#show (for 127.0.0.1 at 2010-03-30 17:29:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mVenue Load (0.3ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 2) [0m
+
+ActionView::MissingTemplate (Missing template venues/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:29:56) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;35;1mVenue Load (0.5ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#create (for 127.0.0.1 at 2010-03-30 17:31:00) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"VvwvnlcsZulbQlaiSQvAhjBZ32wulc+VfpeGV5zm2xI=", "venue"=>{"address"=>"", "name"=>"Belfast Waterfront Hall", "google_maps_location"=>"", "overflow_capacity"=>"1500", "seated_capacity"=>"3000", "text"=>"The Waterfront Hall is Belfast's showpiece musical venue;  a custom designed acoustic space with many...", "venue_id"=>"1"}}
+  [4;36;1mVenue Create (0.9ms)[0m   [0;1mINSERT INTO "venues" ("name", "address", "seated_capacity", "overflow_capacity", "google_maps_location", "venue_id", "text") VALUES('Belfast Waterfront Hall', '', 3000, 1500, '', 1, 'The Waterfront Hall is Belfast''s showpiece musical venue; a custom designed acoustic space with many...')[0m
+Redirected to http://0.0.0.0:3000/venues/3
+Completed in 57ms (DB: 1) | 302 Found [http://0.0.0.0/venues]
+
+
+Processing VenuesController#show (for 127.0.0.1 at 2010-03-30 17:31:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mVenue Load (0.3ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 3) [0m
+
+ActionView::MissingTemplate (Missing template venues/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:31:04) [GET]
+  Parameters: {"id"=>"mew"}
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Event with ID=mew):
+  app/controllers/events_controller.rb:8:in `show'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:31:06) [GET]
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mVenue Load (0.6ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:31:15) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.7ms)[0m   [0;1mSELECT * FROM "venues" [0m
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:31:30) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;35;1mVenue Load (0.7ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:32:03) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.6ms)[0m   [0;1mSELECT * FROM "venues" [0m
+
+ActionView::TemplateError (undefined local variable or method `null' for #<ActionView::Base:0x2660100>) on line #18 of app/views/venues/new.html.erb:
+15:         
+16:         <%= f.label :venue_id, "Parent Venue" %>
+17:         <% venues = Venue.all.collect{|v| [v.name, v.id]} %>
+18:         <%= f.select :venue_id, [null, null] + venues %>
+19:       </li>
+20:       <li>
+21:         <%= f.label :seated_capacity %>
+
+    app/views/venues/new.html.erb:18
+    app/views/venues/new.html.erb:7
+    app/views/venues/new.html.erb:6
+
+Rendered rescues/_trace (58.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:32:08) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;35;1mVenue Load (0.6ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#new (for 127.0.0.1 at 2010-03-30 17:32:15) [GET]
+Rendering template within layouts/application
+Rendering venues/new
+  [4;36;1mVenue Load (0.7ms)[0m   [0;1mSELECT * FROM "venues" [0m
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/venues/new]
+
+
+Processing VenuesController#create (for 127.0.0.1 at 2010-03-30 17:33:34) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"VvwvnlcsZulbQlaiSQvAhjBZ32wulc+VfpeGV5zm2xI=", "venue"=>{"address"=>"18-22 Hill Street, Belfast BT1 2LA‎", "name"=>"The Black Box Theatre", "google_maps_location"=>"<iframe width=\"425\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=black+box&amp;sll=54.596608,-5.919871&amp;sspn=0.013177,0.030556&amp;ie=UTF8&amp;hq=black+box&amp;hnear=&amp;ll=54.596608,-5.919871&amp;spn=0.013177,0.030556&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=black+box&amp;sll=54.596608,-5.919871&amp;sspn=0.013177,0.030556&amp;ie=UTF8&amp;hq=black+box&amp;hnear=&amp;ll=54.596608,-5.919871&amp;spn=0.013177,0.030556\" style=\"color:#0000FF;text-align:left\">View Larger Map</a></small>", "overflow_capacity"=>"", "seated_capacity"=>"", "text"=>"The multi-faceted Black Box has the capacity to hold everything from a small poetry reading to a large gig on its stage. We have quality lighting, AV, power and sound and can provide everything from mics to monitors... and your own dressing room!", "venue_id"=>""}}
+  [4;35;1mVenue Create (0.5ms)[0m   [0mINSERT INTO "venues" ("name", "address", "seated_capacity", "overflow_capacity", "google_maps_location", "venue_id", "text") VALUES('The Black Box Theatre', '18-22 Hill Street, Belfast BT1 2LA‎', NULL, NULL, '<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=black+box&amp;sll=54.596608,-5.919871&amp;sspn=0.013177,0.030556&amp;ie=UTF8&amp;hq=black+box&amp;hnear=&amp;ll=54.596608,-5.919871&amp;spn=0.013177,0.030556&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=black+box&amp;sll=54.596608,-5.919871&amp;sspn=0.013177,0.030556&amp;ie=UTF8&amp;hq=black+box&amp;hnear=&amp;ll=54.596608,-5.919871&amp;spn=0.013177,0.030556" style="color:#0000FF;text-align:left">View Larger Map</a></small>', NULL, 'The multi-faceted Black Box has the capacity to hold everything from a small poetry reading to a large gig on its stage. We have quality lighting, AV, power and sound and can provide everything from mics to monitors... and your own dressing room!')[0m
+Redirected to http://0.0.0.0:3000/venues/4
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/venues]
+
+
+Processing VenuesController#show (for 127.0.0.1 at 2010-03-30 17:33:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mVenue Load (0.4ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+
+ActionView::MissingTemplate (Missing template venues/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VenuesController#edit (for 127.0.0.1 at 2010-03-30 17:33:37) [GET]
+  Parameters: {"id"=>"4"}
+
+ActionView::MissingTemplate (Missing template venues/edit.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:35:31) [GET]
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mVenue Load (0.7ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 57ms (View: 48, DB: 1) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:37:40) [GET]
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/events/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:37:42) [GET]
+Rendering template within layouts/application
+Rendering events/new
+  [4;35;1mVenue Load (0.7ms)[0m   [0mSELECT * FROM "venues" [0m
+Completed in 84ms (View: 75, DB: 1) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-03-30 17:39:07) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"VvwvnlcsZulbQlaiSQvAhjBZ32wulc+VfpeGV5zm2xI=", "event"=>{"availability_start(3i)"=>"30", "name"=>"Refresh Belfast presents Lee Munroe", "availability_start(4i)"=>"20", "availability_start(5i)"=>"00", "tickets_released"=>"", "availability_end(1i)"=>"2010", "text"=>"Lee Munroe .... [longer version, formatted]", "venue_id"=>"4", "availability_end(2i)"=>"3", "availability_end(3i)"=>"30", "availability_end(4i)"=>"20", "availability_end(5i)"=>"00", "introduction"=>"Lee Munroe .... [short intro version, plaintext]", "availability_start(1i)"=>"2010", "availability_start(2i)"=>"2"}}
+  [4;36;1mEvent Create (48.8ms)[0m   [0;1mINSERT INTO "events" ("name", "created_at", "tickets_released", "availability_end", "updated_at", "venue_id", "text", "introduction", "availability_start") VALUES('Refresh Belfast presents Lee Munroe', '2010-03-30 16:39:07', NULL, '2010-03-30', '2010-03-30 16:39:07', 4, 'Lee Munroe .... [longer version, formatted]', 'Lee Munroe .... [short intro version, plaintext]', '2010-03-02')[0m
+Redirected to http://0.0.0.0:3000/events/2
+Completed in 65ms (DB: 49) | 302 Found [http://0.0.0.0/events]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:39:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 2) [0m
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/events/2]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:39:11) [GET]
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#new (for 127.0.0.1 at 2010-03-30 17:39:15) [GET]
+Rendering template within layouts/application
+Rendering events/new
+  [4;36;1mVenue Load (0.8ms)[0m   [0;1mSELECT * FROM "venues" [0m
+Completed in 128ms (View: 118, DB: 1) | 200 OK [http://0.0.0.0/events/new]
+
+
+Processing EventsController#create (for 127.0.0.1 at 2010-03-30 17:40:00) [POST]
+  Parameters: {"commit"=>"save", "authenticity_token"=>"VvwvnlcsZulbQlaiSQvAhjBZ32wulc+VfpeGV5zm2xI=", "event"=>{"availability_start(3i)"=>"30", "name"=>"Refresh Belfast presents Ronald McDonald", "availability_start(4i)"=>"20", "availability_start(5i)"=>"00", "tickets_released"=>"", "availability_end(1i)"=>"2010", "text"=>"Ronald McDonald .... [longer formatted version]", "venue_id"=>"4", "availability_end(2i)"=>"4", "availability_end(3i)"=>"30", "availability_end(4i)"=>"20", "availability_end(5i)"=>"00", "introduction"=>"Ronald McDonald .... [short version]", "availability_start(1i)"=>"2010", "availability_start(2i)"=>"3"}}
+  [4;35;1mEvent Create (0.6ms)[0m   [0mINSERT INTO "events" ("name", "created_at", "tickets_released", "availability_end", "updated_at", "venue_id", "text", "introduction", "availability_start") VALUES('Refresh Belfast presents Ronald McDonald', '2010-03-30 16:40:00', NULL, '2010-04-30', '2010-03-30 16:40:00', 4, 'Ronald McDonald .... [longer formatted version]', 'Ronald McDonald .... [short version]', '2010-03-30')[0m
+Redirected to http://0.0.0.0:3000/events/3
+Completed in 17ms (DB: 1) | 302 Found [http://0.0.0.0/events]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:40:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;35;1mTicket Load (0.3ms)[0m   [0mSELECT * FROM "tickets" WHERE ("tickets".event_id = 3) [0m
+Completed in 18ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/events/3]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:40:03) [GET]
+  [4;36;1mEvent Load (1.2ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:40:26) [GET]
+  [4;35;1mEvent Load (1.0ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+
+ActionView::TemplateError (undefined method `venue' for #<Event:0x2438a30>) on line #11 of app/views/events/index.html.erb:
+8:   <ol>
+9:     <%-@events.each do |event|-%>
+10:     <li>
+11:       <h2><%= link_to event.name, event %> <span class="location"><span class="atsign">@</span><%= event.venue_name%></span></h2>
+12:       <p><%= event.introduction%></p>
+13:       <span class="more-link"><%= link_to "more", event %></span>
+14:     </li>
+
+    app/models/event.rb:5:in `venue_name'
+    app/views/events/index.html.erb:11
+    app/views/events/index.html.erb:9:in `each'
+    app/views/events/index.html.erb:9
+    app/views/events/index.html.erb:6
+
+Rendered rescues/_trace (59.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:40:35) [GET]
+  [4;36;1mEvent Load (1.0ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+  [4;35;1mVenue Load (0.2ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 0) [0m
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #11 of app/views/events/index.html.erb:
+8:   <ol>
+9:     <%-@events.each do |event|-%>
+10:     <li>
+11:       <h2><%= link_to event.name, event %> <span class="location"><span class="atsign">@</span><%= event.venue_name%></span></h2>
+12:       <p><%= event.introduction%></p>
+13:       <span class="more-link"><%= link_to "more", event %></span>
+14:     </li>
+
+    app/models/event.rb:6:in `venue_name'
+    app/views/events/index.html.erb:11
+    app/views/events/index.html.erb:9:in `each'
+    app/views/events/index.html.erb:9
+    app/views/events/index.html.erb:6
+
+Rendered rescues/_trace (60.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:40:44) [GET]
+  [4;36;1mEvent Load (1.0ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+  [4;35;1mVenue Load (0.2ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 0) [0m
+  [4;36;1mVenue Load (0.3ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+Completed in 21ms (View: 13, DB: 2) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:40:51) [GET]
+  [4;36;1mEvent Load (1.0ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+  [4;35;1mVenue Load (0.2ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 0) [0m
+  [4;36;1mVenue Load (0.3ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 17:41:41) [GET]
+  [4;36;1mEvent Load (1.1ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/application
+Rendering events/index
+  [4;35;1mVenue Load (0.2ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 0) [0m
+  [4;36;1mVenue Load (0.4ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:41:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;35;1mTicket Load (0.3ms)[0m   [0mSELECT * FROM "tickets" WHERE ("tickets".event_id = 1) [0m
+  [4;36;1mVenue Load (0.2ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 0) [0m
+Completed in 109ms (View: 97, DB: 1) | 200 OK [http://0.0.0.0/events/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:41:44) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 2) [0m
+  [4;35;1mVenue Load (0.4ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `blurb' for #<ActiveRecord::Associations::BelongsToAssociation:0x2612414>) on line #24 of app/views/events/show.html.erb:
+21:   </ul>
+22: 
+23:   <h3>Venue</h3>
+24:   <p><em><%= @event.venue_blurb%></em></p>
+25:   <%= link_to "edit venue", edit_venue_path(:event_id=>@event.id)%>
+26:   
+27: <% end %>
+
+    app/models/event.rb:10:in `venue_blurb'
+    app/views/events/show.html.erb:24
+    app/views/events/show.html.erb:13
+
+Rendered rescues/_trace (58.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:41:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;35;1mTicket Load (0.3ms)[0m   [0mSELECT * FROM "tickets" WHERE ("tickets".event_id = 2) [0m
+  [4;36;1mVenue Load (0.4ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+Completed in 24ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/events/2]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:43:05) [GET]
+  Parameters: {"event_id"=>"2"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 47ms (View: 34, DB: 0) | 200 OK [http://0.0.0.0/events/2/tickets/new]
+
+
+Processing TicketsController#create (for 127.0.0.1 at 2010-03-30 17:43:14) [POST]
+  Parameters: {"ticket"=>{"availability_start(3i)"=>"30", "availability_start(4i)"=>"16", "ticket_name"=>"Standard", "availability_start(5i)"=>"43", "availability_end(1i)"=>"2010", "availability_end(2i)"=>"3", "availability_end(3i)"=>"30", "availability_end(4i)"=>"16", "released"=>"1", "price_pounds"=>"0", "availability_end(5i)"=>"43", "availability_start(1i)"=>"2010", "availability_start(2i)"=>"3", "quantity_available"=>"110"}, "commit"=>"Submit", "authenticity_token"=>"VvwvnlcsZulbQlaiSQvAhjBZ32wulc+VfpeGV5zm2xI="}
+  [4;36;1mTicket Create (0.5ms)[0m   [0;1mINSERT INTO "tickets" ("ticket_name", "event_id", "availability_end", "price_pounds", "released", "quantity_available", "availability_start") VALUES('Standard', NULL, '2010-03-30', 0, 't', 110, '2010-03-30')[0m
+Redirected to http://0.0.0.0:3000/tickets/1
+Completed in 106ms (DB: 1) | 302 Found [http://0.0.0.0/tickets]
+
+
+Processing TicketsController#show (for 127.0.0.1 at 2010-03-30 17:43:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTicket Load (0.3ms)[0m   [0mSELECT * FROM "tickets" WHERE ("tickets"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template tickets/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:43:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;35;1mTicket Load (0.4ms)[0m   [0mSELECT * FROM "tickets" WHERE ("tickets".event_id = 2) [0m
+  [4;36;1mVenue Load (0.4ms)[0m   [0;1mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+Completed in 24ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/events/2]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:46:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.5ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 2) [0m
+  [4;35;1mVenue Load (0.5ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+Completed in 59ms (View: 46, DB: 1) | 200 OK [http://0.0.0.0/events/2]
+
+
+Processing TicketsController#new (for 127.0.0.1 at 2010-03-30 17:46:51) [GET]
+  Parameters: {"event_id"=>"2"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering tickets/new
+Completed in 46ms (View: 33, DB: 0) | 200 OK [http://0.0.0.0/events/2/tickets/new]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2010-03-30 17:47:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering events/show
+  [4;36;1mTicket Load (0.3ms)[0m   [0;1mSELECT * FROM "tickets" WHERE ("tickets".event_id = 2) [0m
+  [4;35;1mVenue Load (0.4ms)[0m   [0mSELECT * FROM "venues" WHERE ("venues"."id" = 4) [0m
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/events/2]

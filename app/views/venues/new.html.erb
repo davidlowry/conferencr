@@ -1,0 +1,44 @@
+<% content_for :header do %>
+<h1>New Venue</h1>
+
+<% end %>
+
+<% content_for :body do %>
+  <% form_for @venue do |f| -%>
+    <ol class="formlist">
+      <li>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </li>
+      <li>
+        <p class="guidance">If this venue is part of a complex then create the complex as a venue first, then make the &quot;child venues&quot; by using the complex as the Parent Venue.</p>
+        
+        <%= f.label :venue_id, "Parent Venue" %>
+        <% venues = Venue.all.collect{|v| [v.name, v.id]} %>
+        <%= f.select :venue_id, [nil] + venues %>
+      </li>
+      <li>
+        <%= f.label :seated_capacity %>
+        <%= f.text_field :seated_capacity %>
+      </li>
+      <li>
+        <%= f.label :overflow_capacity %>
+        <%= f.text_field :overflow_capacity %>
+      </li>
+      <li>
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+      </li>
+      <li>
+        <%= f.label :google_maps_location %>
+        <%= f.text_field :google_maps_location %>
+      </li>
+      <li>
+        <%= f.label :text %>
+        <%= f.text_area :text, :rows=>5 %>
+      </li>
+
+      <li><%= f.submit "save" %></li>
+    </ol>
+  <% end -%>
+<% end %>

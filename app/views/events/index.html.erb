@@ -1,12 +1,25 @@
-<h1>Conferenc<span>r</span></h1>
-<p>Welcome to conferencr. Select your event</p>
+<% content_for :header do %>
+  <h1>Conferenc<span>r</span></h1>
+  <p>Welcome to conferencr. Select your event</p>
+<% end %>
 
-<ol>
-  <%-@events.each do |event|-%>
-  <li>
-    <h2><%= link_to event.name, event %> <span class="location"><span class="atsign">@</span><%= event.venue_name%></span></h2>
-    <p><%= event.introduction%></p>
-    <span class="more-link"><%= link_to "more", event %></span>
-  </li>
-  <%-end-%>
-</ol>
+<% content_for :body do %>
+
+  <ol>
+    <%-@events.each do |event|-%>
+    <li>
+      <h2><%= link_to event.name, event %> <span class="location"><span class="atsign">@</span><%= event.venue_name%></span></h2>
+      <p><%= event.introduction%></p>
+      <span class="more-link"><%= link_to "more", event %></span>
+    </li>
+    <%-end-%>
+  </ol>
+
+<% end %>
+
+<% content_for :column do %>
+  <h3>Venues</h3>
+  <p><em>Venue</em></p>
+<% end %>
+
+

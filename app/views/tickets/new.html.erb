@@ -1,0 +1,44 @@
+<% content_for :header do %>
+  <h1>New ticket for event <%= link_to @ticket.event.name, @ticket.event %>
+<% end %>
+
+<% content_for :body do %>
+  <% form_for @ticket do |f| -%>
+  <ol class="formlist">
+    <li>
+      <%= f.label :ticket_name, "Name" %>
+      <%= f.text_field :ticket_name %>
+    </li>
+  
+    <li>
+      <%= f.label :price_pounds, "Price (£ STG)" %>
+      <%= f.text_field :price_pounds %>
+    </li>
+  
+    <li>
+      <%= f.label :quantity_available, "Quantity Available" %>
+      <%= f.text_field :quantity_available %>
+    </li>
+  
+    <li>
+      <%= f.label :released, "Released?" %>
+      <%= f.check_box :released %>
+    </li>
+  
+    <li>
+      <%= f.label :availability_start, "Availability Start" %>
+      <%= f.datetime_select :availability_start %>
+    </li>
+  
+    <li>
+      <%= f.label :availability_end, "Availability End" %>
+      <%= f.datetime_select :availability_end %>
+    </li>
+  
+    <li>
+      <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+    </li>
+  </ol>
+  <% end -%>
+<% end %>
+
