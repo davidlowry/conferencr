@@ -4,7 +4,7 @@
 <% end %>
 
 <% content_for :body do %>
-
+  <p><%= link_to "new event", new_event_path%>
   <ol>
     <%-@events.each do |event|-%>
     <li>
@@ -19,7 +19,11 @@
 
 <% content_for :column do %>
   <h3>Venues</h3>
-  <p><em>Venue</em></p>
+  <ul>
+    <% @venues.each do |v| %>
+      <li><%= link_to v.name, v %></li>
+    <% end %>
+  </ul>
 <% end %>
 
 

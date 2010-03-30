@@ -15,7 +15,7 @@
   <p><em>Ticket Availability</em></p>
   <ul>
   <% @tickets.each do |ticket| %>
-    <li><%= link_to ticket.name, [@event, ticket] %></li>
+    <li><%= link_to ticket.ticket_name, [@event, ticket] %></li>
   <% end %>
   <%= link_to "new ticket", new_event_ticket_path(:event_id=>@event.id)%>
   </ul>

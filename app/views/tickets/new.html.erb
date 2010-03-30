@@ -5,6 +5,8 @@
 <% content_for :body do %>
   <% form_for @ticket do |f| -%>
   <ol class="formlist">
+    <%= f.hidden_field :event_id, :value=>params[:event_id] %>
+    
     <li>
       <%= f.label :ticket_name, "Name" %>
       <%= f.text_field :ticket_name %>

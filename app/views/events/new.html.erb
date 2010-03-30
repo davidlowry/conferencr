@@ -11,7 +11,7 @@
       </li>
       <li>
         <%= f.label :venue_id, "Venue" %>
-        <%= f.select :venue_id, Venue.all.collect{|v| [v.name, v.id]} %>
+        <%= f.select :venue_id, Venue.all.collect{|v| [v.name, v.id]} %> <%= link_to "new venue", new_venue_path%>
       </li>
       <li>
         <%= f.label :introduction %>
