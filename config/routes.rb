@@ -5,6 +5,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :events do |event|
     event.resources :tickets
   end
+
+  map.purchase_ticket 'events/:event_id/ticket/:ticket_id/purchase', :controller=>:tickets, :action=>:purchase
   
   map.resources :venues, :tickets
   

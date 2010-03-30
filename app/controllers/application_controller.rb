@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  def current_cart
+    session[:cart_id] ||= Cart.create!.id
+    @current_cart ||= Cart.find(session[:cart_id])
+  end
 end

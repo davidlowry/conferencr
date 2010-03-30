@@ -24,7 +24,7 @@ class Event < ActiveRecord::Migration
     create_table :tickets, :force => true do |t|
       t.integer :event_id
       t.string  :ticket_name
-      t.integer :price_pounds
+      t.decimal :price_pounds
       t.integer :quantity_available
       t.boolean :released
       t.date    :availability_start
@@ -35,6 +35,6 @@ class Event < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :events
+    drop_table :events, :tickets, :venues
   end
 end

@@ -12,6 +12,7 @@ class TicketsController < ApplicationController
   
   def show
     @ticket = Ticket.find(params[:id])
+    @event = @ticket.event
   end
   
   def new
@@ -31,4 +32,9 @@ class TicketsController < ApplicationController
   def edit; end
   def update; end
 
+  def purchase
+    @ticket = Ticket.find(params[:ticket_id])
+    @event = @ticket.event
+    
+  end
 end

@@ -1,5 +1,5 @@
 <% content_for :body do %>
-  <% if !@event.nil? %> These are tickets for the event called <%= @event.name %> <% end %>
+  <%= render :partial => "events/show", :local=>{:event=>@event} %>
   
   <ol>
   <% @tickets.each do |t| %>
