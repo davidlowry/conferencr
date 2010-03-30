@@ -3421,3 +3421,16 @@ Rendering template within layouts/application
 Rendering tickets/purchase
 Rendered events/_show (0.1ms)
 Completed in 70ms (View: 6, DB: 52) | 200 OK [http://0.0.0.0/events/1/ticket/3/purchase]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing EventsController#index (for 127.0.0.1 at 2010-03-30 20:01:27) [GET]
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM `events` [0m
+  [4;35;1mVenue Load (0.5ms)[0m   [0mSELECT * FROM `venues` [0m
+Rendering template within layouts/application
+Rendering events/index
+  [4;36;1mEvent Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mVenue Columns (9.4ms)[0m   [0mSHOW FIELDS FROM `venues`[0m
+  [4;36;1mVenue Load (0.3ms)[0m   [0;1mSELECT * FROM `venues` WHERE (`venues`.`id` = 2) [0m
+  [4;35;1mVenue Load (0.5ms)[0m   [0mSELECT * FROM `venues` WHERE (`venues`.`id` = 3) [0m
+Completed in 55ms (View: 11, DB: 13) | 200 OK [http://0.0.0.0/]
