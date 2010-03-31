@@ -3,7 +3,7 @@ class Cart < ActiveRecord::Base
   
   def total_price
     # convert to array so it doesn't try to do sum on database directly
-    line_items.to_a.sum(&:full_price)
+    purchase_items.to_a.sum(&:full_price)
   end
   
   # def paypal_url(return_url)

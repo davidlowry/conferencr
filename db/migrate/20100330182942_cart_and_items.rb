@@ -1,11 +1,11 @@
 class CartAndItems < ActiveRecord::Migration
   def self.up
     create_table :carts do |t|
-      t.string  :name
-      t.string  :address1
-      t.string  :address2
-      t.string  :postcode
-      t.text    :instructions
+      t.string  :delivery_name
+      t.string  :delivery_address1
+      t.string  :delivery_address2
+      t.string  :delivery_postcode
+      t.text    :delivery_instructions
       t.integer :user_id
       t.string  :purchase_state
       t.datetime :purchased_at
@@ -14,7 +14,7 @@ class CartAndItems < ActiveRecord::Migration
     
     create_table :purchase_items do |t|
       t.decimal :unit_price
-      t.integer :product_id
+      t.integer :ticket_id
       t.integer :cart_id
       t.integer :quantity
       t.timestamps

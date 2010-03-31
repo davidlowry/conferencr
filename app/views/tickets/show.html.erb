@@ -3,5 +3,7 @@
 
   <%= @ticket.ticket_name %>
   
-  <%= link_to "Purchase", purchase_ticket_path(@event, @ticket)%>
+  <%= link_to "Purchase", purchase_items_path(:ticket_id => @ticket), :method => :post %>
+
+  
 <% end %>

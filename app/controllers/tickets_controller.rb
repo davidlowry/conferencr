@@ -25,6 +25,7 @@ class TicketsController < ApplicationController
     if @ticket.save
       redirect_to [@ticket.event, @ticket]
     else
+      flash[:errors] = @ticket.errors.full_messages.to_sentence
       render :new
     end
   end

@@ -13,26 +13,32 @@
   </style>
 </head>
 
-<body id="application.html" onload="">
-  <div id="wrapper">
-    <div id="header">
-      <%= yield :header %>
-      <hr />
-    </div>
+<% overflow_content = yield %>
+
+  <body id="application.html" onload="">
+    <div id="wrapper">
+      <div id="header">
+        <% header = yield :header %>
+        <%= header || "<h1>Conferencr</h1>" %>
+        <hr />
+      </div>
     
-    <div id="main">
-      <%= yield :body %>
-    </div>
+      <div id="main">
+        <%= flash[:errors] %>
+        <%= flash[:notices] %>
+        <%= yield :body %>
+        <%= overflow_content%>
+      </div>
     
-    <div id="column">
-      <%= yield :column%>
-    </div>
+      <div id="column">
+        <%= yield :column%>
+      </div>
     
-    <div id="footer">
-      <hr />
-      2010 by infinity21
+      <div id="footer">
+        <hr />
+        2010 by infinity21
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 
 </html>

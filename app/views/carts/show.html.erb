@@ -1,0 +1,26 @@
+<table id="purchase_items">
+  <tr>
+    <th>Event Ticket</th>
+    <th>Qty</th>
+    <th class="price">Unit Price</th>
+    <th class="price">Full Price</th>
+  </tr>
+  <% for purchase_item in @cart.purchase_items %>
+    <tr class="<%= cycle :odd, :even %>">
+      <td><%=h purchase_item.ticket.event_ticket_name %></td>
+      <td class="qty"><%= purchase_item.quantity %></td>
+      <td class="price"><%= number_to_currency(purchase_item.unit_price, :unit => "£") %></td>
+      <td class="price"><%= number_to_currency(purchase_item.full_price, :unit => "£") %></td>
+    </tr>
+  <% end %>
+  <tr>
+    <td class="total price" colspan="4">
+      Total: <%= number_to_currency(@cart.total_price, :unit => "£") %>
+    </td>
+  </tr>
+</table>
+
+<p>
+  <%= link_to "Save", event_tickets_url(@cart.purchase_items.last.ticket.event) %> |
+  <%= link_to "Checkout", "/carts/purchase" %>
+</p>

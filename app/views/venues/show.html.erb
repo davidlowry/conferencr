@@ -1,3 +1,8 @@
 <% content_for :body do %>
   <%= @venue.name %>
 <% end %>
+
+<% content_for :column do %>
+  <%= venue_map(@venue) unless @venue.google_maps_location.nil?%>
+  <%= venue_event_list(@venue) unless @venue.events.empty?%>
+<% end %>
